@@ -51,3 +51,24 @@ This README provides an overview of the APIs and ViewSets available in the Pizza
 
 - Access the Django admin interface at `http://localhost:8000/admin/` to manage orders, toppings, and other data.
 - Use the API endpoints to interact with the application programmatically.
+
+  # Pizza Zen Application
+
+This is the README for the Pizza Zen application, which allows you to order delicious pizzas.
+
+## Running with Docker
+
+To run the Pizza Zen application using Docker, follow these steps:
+
+1. Make sure you have Docker installed on your system. If not, you can download and install it from [Docker's official website](https://www.docker.com/get-started).
+
+2. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/pizza-zen.git
+   cd pizza-zen
+   docker-compose build
+   docker-compose exec backend bash
+   python manage.py createsuperuser
+   docker-compose up
+   
